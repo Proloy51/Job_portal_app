@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminJobPostList">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_btn"
+        android:backgroundTint="#e62229"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="30dp"
+        app:fabCustomSize="70dp"
+        android:src="@drawable/fab_plus"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="20sp"
+                android:text="Posted Job List"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:background="#DA4453"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/vanusa"
+                android:dividerHeight="8dp"
+                android:divider="#f3f2f7"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:listSelector="@android:color/transparent"
+                android:id="@+id/listViewId"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

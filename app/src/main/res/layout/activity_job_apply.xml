@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobApply">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:text="Job Application Form"
+                    android:textSize="20dp"
+                    android:textColor="#f3f2f7"
+                    android:backgroundTint="#013c61"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usernameContainer"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Required"
+                    app:hintTextColor="#013c61"
+                    android:textColorHint="#013c61"
+                    app:boxStrokeColor="#013c61"
+                    app:helperTextTextColor="#d40202"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/usernameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lines="1"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:hint="Username"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jobIdContainer"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Required"
+                    app:helperTextTextColor="#d40202"
+                    app:hintTextColor="#013c61"
+                    android:textColorHint="#013c61"
+                    app:boxStrokeColor="#013c61"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/jobIdText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lines="1"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:hint="Job Id"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jobTitleContainer"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Required"
+                    app:helperTextTextColor="#d40202"
+                    app:hintTextColor="#013c61"
+                    android:textColorHint="#013c61"
+                    app:boxStrokeColor="#013c61"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/jobtitleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lines="1"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:hint="Job Title"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/candidateTitleContainer"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Required"
+                    app:helperTextTextColor="#d40202"
+                    app:hintTextColor="#013c61"
+                    android:textColorHint="#013c61"
+                    app:boxStrokeColor="#013c61"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/candidateTitleEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lines="1"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:hint="Candidate Name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/companyToApplyContainer"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperText="Required"
+                    app:helperTextTextColor="#d40202"
+                    app:hintTextColor="#013c61"
+                    android:textColorHint="#013c61"
+                    app:boxStrokeColor="#013c61"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/jobTitleContainer">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/companyToApplyText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lines="1"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:hint="Company To Apply"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="MissingConstraints"
+                    android:layout_margin="20dp"
+                    app:cardElevation="8dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="20dp"
+                                android:text="Qualification"
+                                android:textSize="16dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/HSCTitleContainer"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="30dp"
+                                app:helperText="Required"
+                                app:helperTextTextColor="#d40202"
+                                app:hintTextColor="#013c61"
+                                android:textColorHint="#013c61"
+                                app:boxStrokeColor="#013c61"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/HSCEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="HSC Percentage"
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:lines="1" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/underGradContainer"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="30dp"
+                                app:helperText="Required"
+                                app:helperTextTextColor="#d40202"
+                                app:hintTextColor="#013c61"
+                                android:textColorHint="#013c61"
+                                app:boxStrokeColor="#013c61"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/underGradEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Graduation Percentage"
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:lines="1" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/postGradTitleContainer"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="30dp"
+                                android:paddingBottom="15dp"
+                                app:helperText="Required"
+                                app:helperTextTextColor="#d40202"
+                                app:hintTextColor="#013c61"
+                                android:textColorHint="#013c61"
+                                app:boxStrokeColor="#013c61"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/postGradEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Post Graduation Percentage"
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:lines="1" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="MissingConstraints"
+                    android:layout_margin="20dp"
+                    app:cardElevation="8dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="20dp"
+                                android:text="Other"
+                                android:textSize="16dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/experienceTitleContainer"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="30dp"
+                                app:helperText="Required"
+                                app:helperTextTextColor="#d40202"
+                                app:hintTextColor="#013c61"
+                                android:textColorHint="#013c61"
+                                app:boxStrokeColor="#013c61"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/experienceEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Work Experience"
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:lines="1" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/specializationContainer"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="30dp"
+                                app:helperText="Required"
+                                app:helperTextTextColor="#d40202"
+                                app:hintTextColor="#013c61"
+                                android:textColorHint="#013c61"
+                                app:boxStrokeColor="#013c61"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/specializationEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Specialization"
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:lines="1" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/skillTitleContainer"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="30dp"
+                                android:paddingBottom="15dp"
+                                app:helperText="Required"
+                                app:helperTextTextColor="#d40202"
+                                app:hintTextColor="#013c61"
+                                android:textColorHint="#013c61"
+                                app:boxStrokeColor="#013c61"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/skillEditText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="Skills"
+                                    android:textCursorDrawable="@drawable/color_cursor"
+                                    android:lines="1" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp">
+                <Button
+                    android:id="@+id/jobApply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="APPLY"
+                    android:backgroundTint="#013c61"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
