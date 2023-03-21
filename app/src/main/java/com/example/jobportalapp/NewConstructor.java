@@ -1,10 +1,10 @@
 package com.example.jobportalapp;
 
-public class Constructor {
+public class NewConstructor {
     private String name;
 
-    public Constructor(String string) {
-        name = string;
+    public NewConstructor(String name) {
+        this.name = name;
     }
 
     public String getName() {
